@@ -1,0 +1,27 @@
+{
+  "name": "sia-midterms",
+  "version": "1.0.0",
+  "description": "A Midterm Hands-on Assessment for SIA",
+  "keywords": [
+    "SIA"
+  ],
+  "homepage": "https://github.com/daveteves/sia-midterm#readme",
+  "bugs": {
+    "url": "https://github.com/daveteves/sia-midterm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveteves/sia-midterm.git"
+  },
+  "license": "ISC",
+  "author": "Teves (D)",
+  "type": "commonjs",
+  "express": "^5.2.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
