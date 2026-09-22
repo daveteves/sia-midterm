@@ -32,4 +32,10 @@ router.post("/", (req,res) => {
     });
 });
 
+router.delete("/:id", (req, res) => {
+    const id = req.params.id;
+
+    res.status(204).send();
+});
+
 module.export = router;
