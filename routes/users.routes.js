@@ -7,7 +7,19 @@ router.get("/", (req, res) => {
         success: true,
         data: [],
         message : "Users retrieved successfully" 
-    })
+    });
+});
+
+router.get("/:id", (req, res) =>{
+    const id = req.params.id;
+
+    res.json({
+        success: true,
+        data: {
+            id: id,
+            name: "Sample User"
+        }
+    });
 });
 
 module.export = router;
