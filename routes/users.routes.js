@@ -22,4 +22,14 @@ router.get("/:id", (req, res) =>{
     });
 });
 
+router.post("/", (req,res) => {
+    const user = req.body;
+
+    res.status(201).json({
+        success: true,
+        data: user,
+        message: "User created succesfully"
+    });
+});
+
 module.export = router;
