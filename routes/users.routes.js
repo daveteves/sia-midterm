@@ -1,0 +1,41 @@
+const express = require("express");
+
+const router = express.Router();
+
+router.get("/", (req, res) => {
+    res.status(200).json({
+        success: true,
+        data: [],
+        message : "Users retrieved successfully" 
+    });
+});
+
+router.get("/:id", (req, res) =>{
+    const id = req.params.id;
+
+    res.json({
+        success: true,
+        data: {
+            id: id,
+            name: "Sample User"
+        }
+    });
+});
+
+router.post("/", (req,res) => {
+    const user = req.body;
+
+    res.status(201).json({
+        success: true,
+        data: user,
+        message: "User created succesfully"
+    });
+});
+
+router.delete("/:id", (req, res) => {
+    const id = req.params.id;
+
+    res.status(204).send();
+});
+
+module.export = router;
